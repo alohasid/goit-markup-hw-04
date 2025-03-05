@@ -22,47 +22,34 @@ ul {
 }
 
 /* B10, B13 */
-/* Header styling */
+/* Header styles */
 .header {
-    border-bottom: 1px solid #e7e9fc;
-    padding: 0 15px;
-}
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px 0 15px;
-}
-.nav {
-    display: flex;
-    align-items: center;
-}
-.logo {
-    margin-right: 76px;
-    display: block;
-}
-.nav-menu {
-    display: flex;
-    gap: 40px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.nav-menu li:last-child {
-    margin-right: 0;
-}
-.nav-link {
-    padding: 24px 0;
+/* First menu item link styles */
+.nav .nav-item:first-child a {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Address styling */
-.contact-list {
-    display: flex;
-    gap: 40px;
+/* ::after pseudo-element styles */
+.nav .nav-item:first-child a::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
-.contact-list li {
-    margin-right: 40px;
-}
-.contact-list li:last-child {
-    margin-right: 0;
+
+/* Contact list items transition styles */
+.contact-info .contact-item:first-child a,
+.contact-info .contact-item:nth-child(2) a {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Section styling */
